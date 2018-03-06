@@ -40,7 +40,9 @@ class OrdersController < ApplicationController
       redirect_to root_path, notice: "#{@previous_order.product.name} ha sido agregado al carro."
     else
       @order = Order.new()
-      @order.product = Product.find(params[:product_id])
+      @product = Product.find(params[:product_id])
+      @order.product = @product
+      @order.price = @product.price
       @order.user = current_user
 
       if @order.save

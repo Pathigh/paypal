@@ -34,7 +34,7 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
 gem 'faker'
-
+gem 'paypal-sdk-rest'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -44,6 +44,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'railroady'
 end
 
 group :development do
