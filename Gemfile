@@ -35,6 +35,7 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
 gem 'faker'
 gem 'paypal-sdk-rest'
+gem 'omniauth-facebook'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
